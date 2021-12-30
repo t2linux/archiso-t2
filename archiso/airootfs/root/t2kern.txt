@@ -1,0 +1,3 @@
+[t2kern]
+SigLevel = Optional TrustAll
+Server = file:///t2kern

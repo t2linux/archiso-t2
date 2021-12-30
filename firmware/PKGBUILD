@@ -1,0 +1,22 @@
+pkgname=apple-bcm-wifi-firmware
+pkgver=12.0 #monterey is macOS 12, probably change this to whatever macos version you got fw from
+pkgrel=1
+pkgdesc="WiFi Firmware from macOS Big Sur for T2 and M1 Macs"
+arch=("any")
+url=""
+license=('unknown')
+makedepends=("python3" "tar")
+source=("https://github.com/AdityaGarg8/macOS-Big-Sur-WiFi-Firmware/archive/refs/heads/main.tar.gz"
+        "asahi-installer::git+https://github.com/AsahiLinux/asahi-installer#commit=9db938d8a20f67d7a3791cd5eea1266f8325acac")
+sha256sums=('SKIP'
+            'SKIP')
+build() {
+    mv macOS-Big-Sur-WiFi-Firmware-main/* ./
+    cd asahi-installer/src
+    python3 -m firmware.wifi ../.. ../../firmware.tar
+}
+package() {
+    mkdir -p $pkgdir/usr/lib/firmware
+    cd $pkgdir/usr/lib/firmware
+    tar xf $srcdir/firmware.tar
+}
