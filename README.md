@@ -11,3 +11,5 @@ doas mkarchiso -v archiso
 After everything has finished, you can grab your iso in './out'. you can delete 'work' directory if everything went well.
 
 The MOTD contains instruction to enable local packages.
+
+linux-t2 kernel was directly downloaded from https://github.com/Redecorating/mbp-16.1-linux-wifi but if you are skeptical just compare hash or download it yourself.
