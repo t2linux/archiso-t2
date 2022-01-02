@@ -2,6 +2,7 @@
 sudo pacman --noconfirm --needed -S archiso wget
 cd firmware
 makepkg -s
+mkdir ../archiso/airootfs/t2kern/
 cp *.pkg.* ../archiso/airootfs/t2kern/
 cd ../archiso/airootfs/t2kern/
 wget https://github.com/Redecorating/mbp-16.1-linux-wifi/releases/download/v5.15.11-3/linux-t2-5.15.11-3-x86_64.pkg.tar.zst
