@@ -1,1 +1,0 @@
-/archiso/airootfs/t2kern/linux-t2-5.15.11-3-x86_64.pkg.tar.zst filter=lfs diff=lfs merge=lfs -text
