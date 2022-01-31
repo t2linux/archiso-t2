@@ -13,6 +13,5 @@ cd archiso/
 ```
 
 After everything has finished, you can grab your iso in './out'.
-The MOTD contains instruction to enable local packages.
 
 linux-t2 kernel is from https://github.com/Redecorating/mbp-16.1-linux-wifi (it will be automatically downloaded when building)

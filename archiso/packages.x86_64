@@ -1,5 +1,4 @@
 alsa-utils
-amd-ucode
 arch-install-scripts
 archinstall
 b43-fwcutter
@@ -73,6 +72,7 @@ nmap
 ntfs-3g
 nvme-cli
 openconnect
+opendoas
 openssh
 openvpn
 partclone
@@ -108,7 +108,6 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools

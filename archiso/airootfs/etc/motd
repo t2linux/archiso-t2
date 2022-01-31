@@ -8,5 +8,3 @@ Ethernet, WLAN and WWAN interfaces using DHCP should work automatically.
 
 After connecting to the internet, the installation guide can be accessed
 via the convenience script [35mInstallation_guide[0m.
-
-Also, before DOING ANYTHING ELSE, RUN /root/runmefirst.sh to make T2-supported kernel and firmware available to pacman.
