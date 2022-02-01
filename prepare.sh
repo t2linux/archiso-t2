@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo pacman --noconfirm --needed -S archiso wget
 cd firmware
-makepkg -s
+makepkg -s --noconfirm
 mkdir ../archiso/airootfs/t2kern/
 cp *.pkg.* ../archiso/airootfs/t2kern/
 cd ../archiso/airootfs/t2kern/
