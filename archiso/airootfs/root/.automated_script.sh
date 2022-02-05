@@ -31,6 +31,4 @@ automated_script ()
 
 if [[ $(tty) == "/dev/tty1" ]]; then
     automated_script
-    echo "After running pacstrap and before you go into chroot, please, *please* copy /t2kern to /mnt/t2kern just in case."
-    cat /root/t2kern.txt >> /etc/pacman.conf
 fi
