@@ -3,7 +3,7 @@
 
 iso_name="archlinux-t2mac"
 iso_label="ARCH_T2_MAC_$(date +%Y%m)"
-iso_publisher="Yui Funami <https://mirror.funami.tech>"
+iso_publisher="Yui Funami <https://funami.tech>"
 iso_application="Arch Linux Live/Rescue CD for T2 Macs"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
