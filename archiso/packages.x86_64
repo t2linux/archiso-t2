@@ -1,4 +1,5 @@
 alsa-utils
+amd-ucode
 arch-install-scripts
 archinstall
 b43-fwcutter
@@ -49,6 +50,7 @@ libfido2
 libusb-compat
 linux-atm
 linux-firmware
+linux-firmware-marvell
 livecd-sounds
 lsscsi
 lvm2
