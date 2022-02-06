@@ -43,7 +43,7 @@ jobs:
          files: |
            ${{ github.workspace }}/out/archlinux-t2mac-*.iso
          tag_name: ${{ steps.create_tag.outputs.tag }}
-         release_name: archlinux-t2mac-${{ steps.create_tag.outputs.tag }}-x86_64 
+         name: archlinux-t2mac-${{ steps.create_tag.outputs.tag }}-x86_64 
          draft: ${{ contains(github.event.head_commit.message, '[draft]') }}
          prerelease: ${{ contains(github.event.head_commit.message, '[prerel]') }}
          body: |
