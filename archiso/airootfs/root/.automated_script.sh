@@ -31,6 +31,14 @@ automated_script ()
 
 if [[ $(tty) == "/dev/tty1" ]]; then
     automated_script
-    echo "After running pacstrap and before you go into chroot, please, *please* copy /t2kern to /mnt/t2kern just in case."
-    cat /root/t2kern.txt >> /etc/pacman.conf
+    cat << EOF >> /etc/pacman.conf
+[Redecorating-t2]
+Server = https://github.com/Redecorating/archlinux-t2-packages/releases/download/repo
+SigLevel = Optional TrustAll
+	
+[arch-mact2]
+Server = https://mirror.funami.tech/arch-mact2/os/x86_64
+SigLevel = Optional TrustAll
+EOF
+
 fi
