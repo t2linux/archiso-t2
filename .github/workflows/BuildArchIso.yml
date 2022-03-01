@@ -14,8 +14,8 @@ jobs:
         cd /build
         useradd builduser -m
         passwd -d builduser
-        pacman -Syu --noconfirm --needed reflector
-        reflector -f 5 --sort rate -p https --save /etc/pacman.d/mirrorlist
+        pacman -Syu --noconfirm --needed reflector geoip gawk sed curl
+        reflector --country $(geoiplookup "$(curl myip.wtf/text)" | awk '{print $4}' - | sed -e 's/,//g') --sort rate -n 5
         pacman -S --noconfirm --needed sudo git base-devel
         printf 'builduser ALL=(ALL) ALL\\n' | tee -a /etc/sudoers
         chown -R builduser:builduser ./

@@ -11,6 +11,7 @@ clonezilla
 cloud-init
 crda
 cryptsetup
+curl
 darkhttpd
 ddrescue
 dhclient
@@ -28,6 +29,8 @@ exfatprogs
 f2fs-tools
 fatresize
 fsarchiver
+gawk
+geoip
 gnu-netcat
 gpart
 gpm
@@ -92,6 +95,7 @@ rsync
 rxvt-unicode-terminfo
 screen
 sdparm
+sed
 sg3_utils
 smartmontools
 sof-firmware
