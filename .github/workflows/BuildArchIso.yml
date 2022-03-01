@@ -14,7 +14,9 @@ jobs:
         cd /build
         useradd builduser -m
         passwd -d builduser
-        pacman -Syu --noconfirm --needed sudo git base-devel
+        pacman -Syu --noconfirm --needed reflector
+        reflector -f 5 --sort rate -p https --save /etc/pacman.d/mirrorlist
+        pacman -S --noconfirm --needed sudo git base-devel
         printf 'builduser ALL=(ALL) ALL\\n' | tee -a /etc/sudoers
         chown -R builduser:builduser ./
         sudo -u builduser bash -c './prepare.sh'

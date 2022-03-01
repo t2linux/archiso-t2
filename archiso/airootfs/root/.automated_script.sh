@@ -39,6 +39,7 @@ Server = https://github.com/Redecorating/archlinux-t2-packages/releases/download
 Server = https://mirror.funami.tech/arch-mact2/os/x86_64
 SigLevel = Optional TrustAll
 EOF
+    sudo reflector -f 5 --sort rate -p https --save /etc/pacman.d/mirrorlist
     sudo pacman-key --init
     yes | sudo pacman-key --recv-keys DEB7F121BAAA6F4E --keyserver pgp.mit.edu
     yes | sudo pacman-key --lsign-key DEB7F121BAAA6F4E
