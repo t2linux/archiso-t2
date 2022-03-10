@@ -34,14 +34,12 @@ if [[ $(tty) == "/dev/tty1" ]]; then
     cat << EOF >> /etc/pacman.conf
 [Redecorating-t2]
 Server = https://github.com/Redecorating/archlinux-t2-packages/releases/download/packages
-	
+SigLevel = Optional TrustAll
+
 [arch-mact2]
 Server = https://mirror.funami.tech/arch-mact2/os/x86_64
 SigLevel = Optional TrustAll
 EOF
     reflector --country $(geoiplookup "$(curl ipv4.myip.wtf/text)" | awk '{print $4}' - | sed -e 's/,//g') --sort rate -n 5 --save /etc/pacman.d/mirrorlist
-    sudo pacman-key --init
-    yes | sudo pacman-key --recv-keys DEB7F121BAAA6F4E --keyserver pgp.mit.edu
-    yes | sudo pacman-key --lsign-key DEB7F121BAAA6F4E
 
 fi
