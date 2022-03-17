@@ -43,7 +43,6 @@ ipw2100-fw
 ipw2200-fw
 irssi
 iw
-iwd
 jfsutils
 kitty-terminfo
 less
@@ -70,6 +69,7 @@ mtools
 nano
 nbd
 ndisc6
+networkmanager
 nfs-utils
 nilfs-utils
 nmap
