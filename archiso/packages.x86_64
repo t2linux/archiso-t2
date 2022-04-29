@@ -16,6 +16,7 @@ darkhttpd
 ddrescue
 dhclient
 dhcpcd
+dialog
 diffutils
 dmraid
 dnsmasq
@@ -69,7 +70,7 @@ mtools
 nano
 nbd
 ndisc6
-networkmanager
+netctl
 nfs-utils
 nilfs-utils
 nmap
