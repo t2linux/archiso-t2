@@ -14,8 +14,10 @@ jobs:
         cd /build
         useradd builduser -m
         passwd -d builduser
-        pacman -Syu --noconfirm --needed reflector geoip gawk sed curl
-        reflector --country $(geoiplookup "$(curl ipv4.myip.wtf/text)" | awk '{print $4}' - | sed -e 's/,//g') --sort rate -n 5 --save /etc/pacman.d/mirrorlist
+        pacman-key --init
+        pacman-key --populate
+        pacman -Syu --noconfirm --needed reflector curl
+        reflector --country $(curl ipv4.myip.wtf/text/country) --sort rate -n 5 --save /etc/pacman.d/mirrorlist
         pacman -S --noconfirm --needed sudo git base-devel
         printf 'builduser ALL=(ALL) ALL\\n' | tee -a /etc/sudoers
         chown -R builduser:builduser ./
