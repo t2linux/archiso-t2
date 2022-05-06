@@ -40,7 +40,6 @@ SigLevel = Optional TrustAll
 Server = https://mirror.funami.tech/arch-mact2/os/x86_64
 SigLevel = Optional TrustAll
 EOF
-    systemctl enable --now NetworkManager
     reflector --country $(curl ipv4.myip.wtf/text/country) --sort rate -n 5 --save /etc/pacman.d/mirrorlist
 
 fi
