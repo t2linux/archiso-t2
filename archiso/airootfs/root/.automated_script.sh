@@ -38,7 +38,7 @@ SigLevel = Optional TrustAll
 
 [arch-mact2]
 Server = https://mirror.funami.tech/arch-mact2/os/x86_64
-SigLevel = Optional TrustAll
+SigLevel = Never
 EOF
     reflector --country $(curl ipv4.myip.wtf/text/country) --sort rate -n 5 --save /etc/pacman.d/mirrorlist
 
