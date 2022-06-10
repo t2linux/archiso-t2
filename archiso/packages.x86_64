@@ -53,7 +53,6 @@ libfido2
 libusb-compat
 linux-atm
 linux-firmware
-linux-firmware-marvell
 livecd-sounds
 lsscsi
 lvm2
