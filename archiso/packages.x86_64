@@ -1,4 +1,5 @@
 alsa-utils
+apple-bcm-wifi-firmware
 arch-install-scripts
 archinstall
 b43-fwcutter
@@ -122,5 +123,3 @@ xl2tpd
 zsh
 linux-t2
 linux-t2-headers
-linux-t2-docs
-apple-bcm-wifi-firmware
