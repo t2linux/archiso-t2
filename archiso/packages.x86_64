@@ -43,6 +43,7 @@ ipw2100-fw
 ipw2200-fw
 irssi
 iw
+iwd
 jfsutils
 kitty-terminfo
 less
@@ -69,7 +70,6 @@ mtools
 nano
 nbd
 ndisc6
-netctl
 nfs-utils
 nilfs-utils
 nmap
@@ -116,7 +116,6 @@ vim
 vpnc
 wireless-regdb
 wireless_tools
-wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
