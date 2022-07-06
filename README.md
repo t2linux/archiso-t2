@@ -32,5 +32,8 @@ wget https://mirror.funami.tech/arch-mact2/os/x86_64/apple-bcm-wifi-firmware-12.
 sudo pacman -U apple-bcm-wifi-firmware-12.0-1-any.pkg.tar.zst
 ```
 # Credits
+
 [Noa Himesaka](https://github.com/NoaHimesaka1873): Lead developer and maintainer
+
 [Brad Pitcher](https://github.com/brad): Created GitHub Workflow build script
+
