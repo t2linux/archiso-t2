@@ -1,4 +1,4 @@
-# Arch Linux ISO for Macs with T2
+# Arch Linux ISO for Macs with T2No
 
 Follow this to build your own iso:
 
@@ -31,4 +31,6 @@ Or, grab a pre-compiled package:
 wget https://mirror.funami.tech/arch-mact2/os/x86_64/apple-bcm-wifi-firmware-12.0-1-any.pkg.tar.zst
 sudo pacman -U apple-bcm-wifi-firmware-12.0-1-any.pkg.tar.zst
 ```
-
+# Credits
+[Noa Himesaka](https://github.com/NoaHimesaka1873): Lead developer and maintainer
+[Brad Pitcher](https://github.com/brad): Created GitHub Workflow build script
