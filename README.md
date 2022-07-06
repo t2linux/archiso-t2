@@ -1,10 +1,10 @@
 # Arch Linux ISO for Macs with T2
 
-Follow this to build your own iso
+Follow this to build your own iso:
 
 ```sh
-git clone https://github.com/NoaHimesaka1873/archiso-t2
-cd archiso/
+git clone https://github.com/t2linux/archiso-t2
+cd archiso-t2/
 ./prepare.sh
 ./build.sh
 
@@ -15,3 +15,20 @@ cd archiso/
 After everything has finished, you can grab your iso in './out'.
 
 linux-t2 kernel is from https://github.com/Redecorating/mbp-16.1-linux-wifi (it will be automatically downloaded when building)
+
+# Bonus! Wi-Fi firmware package for Macs with T2 (except ones with BCM4377, they aren't supported for now)
+
+Follow this to build your own package:
+
+```sh
+git clone https://github.com/t2linux/archiso-t2
+cd archiso-t2/firmware
+makepkg -s
+```
+Or, grab a pre-compiled package:
+
+```sh
+wget https://mirror.funami.tech/arch-mact2/os/x86_64/apple-bcm-wifi-firmware-12.0-1-any.pkg.tar.zst
+sudo pacman -U apple-bcm-wifi-firmware-12.0-1-any.pkg.tar.zst
+```
+
