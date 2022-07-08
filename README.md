@@ -1,4 +1,4 @@
-# Arch Linux ISO for Macs with T2No
+# Arch Linux ISO for Macs with T2
 
 Follow this to build your own iso:
 
