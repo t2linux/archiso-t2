@@ -30,17 +30,5 @@ automated_script ()
 }
 
 if [[ $(tty) == "/dev/tty1" ]]; then
-    systemctl enable --now iwd
     automated_script
-    cat << EOF >> /etc/pacman.conf
-[Redecorating-t2]
-Server = https://github.com/Redecorating/archlinux-t2-packages/releases/download/packages
-SigLevel = Optional TrustAll
-
-[arch-mact2]
-Server = https://mirror.funami.tech/arch-mact2/os/x86_64
-SigLevel = Never
-EOF
-    ping -q -c1 google.com &>/dev/null && reflector --country $(curl ipv4.myip.wtf/text/country) --sort rate -n 5 --save /etc/pacman.d/mirrorlist || echo "Connect to Wi-fi, then run command 'choose-mirror'"
-
 fi
