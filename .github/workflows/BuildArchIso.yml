@@ -47,7 +47,7 @@ jobs:
          files: |
            ${{ github.workspace }}/out/archlinux-t2-*.iso
          tag_name: ${{ steps.create_tag.outputs.tag }}
-         name: archlinux-t2-${{ steps.create_tag.outputs.tag }}-x86_64 - Release Onimai 
+         name: archlinux-t2-${{ steps.create_tag.outputs.tag }} - Release Onimai 
          draft: ${{ contains(github.event.head_commit.message, '[draft]') }}
          prerelease: ${{ contains(github.event.head_commit.message, '[prerel]') }}
          body: |
