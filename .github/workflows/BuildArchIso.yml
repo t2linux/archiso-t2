@@ -47,11 +47,11 @@ jobs:
          files: |
            ${{ github.workspace }}/out/archlinux-t2-*.iso
          tag_name: ${{ steps.create_tag.outputs.tag }}
-         name: archlinux-t2-${{ steps.create_tag.outputs.tag }} - Release Onimai 
+         name: archlinux-t2-${{ steps.create_tag.outputs.tag }} - Release Wataten 
          draft: ${{ contains(github.event.head_commit.message, '[draft]') }}
          prerelease: ${{ contains(github.event.head_commit.message, '[prerel]') }}
          body: |
-           This release features Mahiro Oyama from [ONIMAI: I'm Now Your Sister!](https://kodansha.us/series/onimai-im-now-your-sister/), celebrating announcement of anime adaptation! 
+           This release features Hana Shirosaki from [Watashi ni Tenshi ga Maiorita!](https://myanimelist.net/anime/37993/Watashi_ni_Tenshi_ga_Maiorita), celebrating movie release in Japan!  
            Every major release will feature new anime/manga and minor releases will have different characters!
            Note that Arch ISO release follows kernel release name.
            Follow [this guide](https://wiki.t2linux.org/distributions/arch/installation/) using this ISO to install Arch on your T2 Mac 
