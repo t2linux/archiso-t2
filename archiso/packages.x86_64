@@ -83,6 +83,7 @@ pcsclite
 ppp
 pptpclient
 pv
+python-requests
 qemu-guest-agent
 refind
 reflector
