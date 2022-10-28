@@ -30,7 +30,7 @@ automated_script ()
 }
 
 if [[ $(tty) == "/dev/tty1" ]]; then
-    cat <<EOF > /etc/pacman.conf
+    cat <<EOF >> /etc/pacman.conf
 
 [Redecorating-t2]
 Server = https://github.com/Redecorating/archlinux-t2-packages/releases/download/packages
