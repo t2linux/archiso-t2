@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux-t2"
-iso_label="ARCH_$(date +%Y%m)_t2"
+iso_name="archlinux-t2-test"
+iso_label="ARCH_$(date +%Y%m)_t2_test"
 iso_publisher="t2linux <https://t2linux.org>"
-iso_application="Arch Linux Live/Rescue CD for Macs with T2 security chip"
-iso_version="$(date +%Y.%m.%d)-t2"
+iso_application="Arch Linux Live/Rescue CD for Macs with T2 security chip (test version)"
+iso_version="$(date +%Y.%m.%d)-t2-test"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.grub.esp' 'uefi-x64.grub.eltorito')

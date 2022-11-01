@@ -45,7 +45,7 @@ less
 lftp
 libfido2
 libusb-compat
-linux-t2
+linux-t2-test
 linux-atm
 linux-firmware
 linux-firmware-marvell
