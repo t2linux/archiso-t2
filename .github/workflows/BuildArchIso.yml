@@ -28,20 +28,20 @@ jobs:
         docker run --privileged -t -v $PWD:/build archlinux /bin/bash /build/entrypoint.sh
     
     - name: Upload Built ISO
-      if: ${{ github.ref == 'refs/heads/senpai' && !contains(github.event.head_commit.message, '[no rel]') && !contains(github.event.head_commit.message, '[no build]') }}
+      if: ${{ !contains(github.event.head_commit.message, '[no rel]') && !contains(github.event.head_commit.message, '[no build]') }}
       uses: actions/upload-artifact@v2
       with:
         name: built-iso
         path: ${{ github.workspace }}/out/archlinux-t2-*.iso
     - name: Create Tag
       id: create_tag
-      if: ${{ github.ref == 'refs/heads/senpai' && !contains(github.event.head_commit.message, '[no rel]') && !contains(github.event.head_commit.message, '[no build]') }}
+      if: ${{ !contains(github.event.head_commit.message, '[no rel]') && !contains(github.event.head_commit.message, '[no build]') }}
       run: |
         export TAG=$(date +%Y.%m.%d)
         echo "::set-output name=tag::${TAG}"
         echo $TAG
     - name: Release
-      if: ${{ github.ref == 'refs/heads/senpai' && !contains(github.event.head_commit.message, '[no rel]') && !contains(github.event.head_commit.message, '[no build]') }}
+      if: ${{ !contains(github.event.head_commit.message, '[no rel]') && !contains(github.event.head_commit.message, '[no build]') }}
       uses: softprops/action-gh-release@v1
       with:
          files: |
