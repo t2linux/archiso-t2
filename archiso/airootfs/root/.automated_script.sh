@@ -32,10 +32,6 @@ automated_script ()
 if [[ $(tty) == "/dev/tty1" ]]; then
     cat <<EOF >> /etc/pacman.conf
 
-[Redecorating-t2]
-Server = https://github.com/Redecorating/archlinux-t2-packages/releases/download/packages
-SigLevel = Optional TrustAll
-
 [arch-mact2]
 Server = https://mirror.funami.tech/arch-mact2/os/x86_64
 SigLevel = Never

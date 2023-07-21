@@ -47,11 +47,11 @@ jobs:
          files: |
            ${{ github.workspace }}/out/archlinux-t2-*.iso
          tag_name: ${{ steps.create_tag.outputs.tag }}
-         name: archlinux-t2-${{ steps.create_tag.outputs.tag }} - Release Wataoshi
+         name: archlinux-t2-${{ steps.create_tag.outputs.tag }} - Release Yagakimi
          draft: ${{ contains(github.event.head_commit.message, '[draft]') }}
          prerelease: ${{ contains(github.event.head_commit.message, '[prerel]') }}
          body: |
-           This release features Claire François from [I'm in Love with the Villainess](https://sevenseasentertainment.com/series/im-in-love-with-the-villainess-light-novel/), which got anime adaptation announcement recently!
+           This release features Yuu Koito from [Bloom Into You](https://sevenseasentertainment.com/series/bloom-into-you/)!
            Every major release will feature new anime/manga and minor releases will have different characters!
            Note that Arch ISO release follows kernel release name.
            Follow [this guide](https://wiki.t2linux.org/distributions/arch/installation/) using this ISO to install Arch on your T2 Mac 
