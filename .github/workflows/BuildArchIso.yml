@@ -51,8 +51,8 @@ jobs:
          draft: ${{ contains(github.event.head_commit.message, '[draft]') }}
          prerelease: ${{ contains(github.event.head_commit.message, '[prerel]') }}
          body: |
-           This release features Yuu Koito from [Bloom Into You](https://sevenseasentertainment.com/series/bloom-into-you/)!
-           Every major release will feature new anime/manga and minor releases will have different characters!
+           This release features Yui Funami from YuruYuri!
+           Every major release will feature new anime/manga and minor releases will have different characters! 
            Note that Arch ISO release follows kernel release name.
            Follow [this guide](https://wiki.t2linux.org/distributions/arch/installation/) using this ISO to install Arch on your T2 Mac 
       env:
