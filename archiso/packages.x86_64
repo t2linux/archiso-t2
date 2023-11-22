@@ -5,6 +5,7 @@ arch-install-scripts
 archinstall
 base
 bind
+bolt
 brltty
 btrfs-progs
 clonezilla
@@ -100,6 +101,7 @@ squashfs-tools
 sudo
 syslinux
 systemd-resolvconf
+t2fand
 t2strap
 tcpdump
 terminus-font
