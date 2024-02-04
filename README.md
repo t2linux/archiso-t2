@@ -14,7 +14,7 @@ cd archiso-t2/
 
 After everything has finished, you can grab your iso in './out'.
 
-linux-t2 kernel is from https://github.com/Redecorating/mbp-16.1-linux-wifi (it will be automatically downloaded when building)
+linux-t2 kernel is from https://github.com/NoaHimesaka1873/linux-t2-arch (it will be automatically downloaded when building)
 
 # Bonus! Wi-Fi and Bluetooth firmware package for Macs with T2
 
@@ -28,8 +28,8 @@ makepkg -s
 Or, grab a pre-compiled package:
 
 ```sh
-wget https://mirror.funami.tech/arch-mact2/os/x86_64/apple-bcm-firmware-13.0-1-any.pkg.tar.zst
-sudo pacman -U apple-bcm-firmware-13.0-1-any.pkg.tar.zst
+wget https://mirror.funami.tech/arch-mact2/os/x86_64/apple-bcm-firmware-14.0-1-any.pkg.tar.zst
+sudo pacman -U apple-bcm-firmware-14.0-1-any.pkg.tar.zst
 ```
 
 If you need raw firmware files, you can grap them from [here](https://mirror.funami.tech/arch-mact2/firmware/).
