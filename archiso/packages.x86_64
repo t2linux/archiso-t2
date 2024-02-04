@@ -101,7 +101,7 @@ squashfs-tools
 sudo
 syslinux
 systemd-resolvconf
-t2fand
+t2fanrd
 t2strap
 tcpdump
 terminus-font
