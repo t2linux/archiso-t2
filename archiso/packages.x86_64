@@ -28,7 +28,7 @@ exfatprogs
 f2fs-tools
 fatresize
 fsarchiver
-gnu-netcat
+openbsd-netcat
 gpart
 gpm
 gptfdisk
@@ -60,7 +60,7 @@ mc
 mdadm
 memtest86+-efi
 mkinitcpio
-mkinitcpio-archiso
+mkinitcpio-archiso-t2
 mkinitcpio-nfs-utils
 modemmanager
 mtools
@@ -100,6 +100,7 @@ squashfs-tools
 sudo
 syslinux
 systemd-resolvconf
+t2archinstall
 t2fanrd
 t2strap
 tcpdump
