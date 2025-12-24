@@ -35,7 +35,6 @@ gptfdisk
 grml-zsh-config
 grub
 hdparm
-hyperv
 intel-ucode
 irssi
 iw
@@ -114,7 +113,6 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
