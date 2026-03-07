@@ -2,6 +2,8 @@ alsa-utils
 apple-t2-audio-config
 apple-bcm-firmware
 arch-install-scripts
+arch-mact2-mirrorlist
+arch-mact2-rankmirrors
 archinstall
 base
 bind

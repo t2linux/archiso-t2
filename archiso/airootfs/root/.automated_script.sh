@@ -33,7 +33,7 @@ if [[ $(tty) == "/dev/tty1" ]]; then
     cat <<EOF >> /etc/pacman.conf
 
 [arch-mact2]
-Server = https://mirror.funami.tech/arch-mact2/os/x86_64
+Include = /etc/pacman.d/arch-mact2-mirrorlist
 SigLevel = Never
 EOF
     automated_script
