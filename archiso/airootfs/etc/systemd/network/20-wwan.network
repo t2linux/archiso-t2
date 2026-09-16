@@ -1,9 +1,11 @@
 [Match]
-Name=ww*
+Type=wwan
+
+[Link]
+RequiredForOnline=routable
 
 [Network]
 DHCP=yes
-IPv6PrivacyExtensions=yes
 
 # systemd-networkd does not set per-interface-type default route metrics
 # https://github.com/systemd/systemd/issues/17698

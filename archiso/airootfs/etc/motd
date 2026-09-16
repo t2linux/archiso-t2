@@ -1,6 +1,8 @@
-To install [38;2;23;147;209mArch Linux[0m on your Mac follow the installation guide:
+To install [38;2;23;147;209mArch Linux[0m on your T2 Mac follow the installation guide:
 https://wiki.t2linux.org/distributions/arch/installation/
 
+Wi-Fi and Bluetooth firmware is fetched from the macOS volume on first login.
+If that failed, run [35mapple-bcm-firmware-fetcher[0m again after checking that macOS is still installed.
 For Wi-Fi, authenticate to the wireless network using the [35miwctl[0m utility.
 For mobile broadband (WWAN) modems, connect with the [35mmmcli[0m utility.
 Ethernet, WLAN and WWAN interfaces using DHCP should work automatically.

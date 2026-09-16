@@ -1,13 +1,14 @@
 [Match]
-# Matching with "Type=ether" causes issues with containers because it also matches virtual Ethernet interfaces (veth*).
-# See https://bugs.archlinux.org/task/70892
-# Instead match by globbing the network interface name.
-Name=en*
-Name=eth*
+Type=ether
+# Exclude virtual Ethernet interfaces
+Kind=!*
+
+[Link]
+RequiredForOnline=routable
 
 [Network]
 DHCP=yes
-IPv6PrivacyExtensions=yes
+MulticastDNS=yes
 
 # systemd-networkd does not set per-interface-type default route metrics
 # https://github.com/systemd/systemd/issues/17698

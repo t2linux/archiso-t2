@@ -1,0 +1,14 @@
+# remove from airootfs!
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = arch-mact2-mirrorlist
+
+[Action]
+Description = Adding the arch-mact2 repository to /etc/pacman.conf...
+When = PostTransaction
+Depends = sh
+Depends = coreutils
+Depends = grep
+Exec = /bin/sh -c "grep -qx '\[arch-mact2\]' /etc/pacman.conf || printf '\n[arch-mact2]\nSigLevel = Never\nInclude = /etc/pacman.d/arch-mact2-mirrorlist\n' >> /etc/pacman.conf"

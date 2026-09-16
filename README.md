@@ -16,23 +16,17 @@ After everything has finished, you can grab your iso in './out'.
 
 linux-t2 kernel is from https://github.com/NoaHimesaka1873/linux-t2-arch (it will be automatically downloaded when building)
 
-# Bonus! Wi-Fi and Bluetooth firmware package for Macs with T2
+# Wi-Fi and Bluetooth firmware
 
-Follow this to build your own package:
+The live system ships `apple-bcm-firmware-fetcher`, which extracts the Wi-Fi and Bluetooth firmware from the macOS volume on the internal SSD (via the APFS driver in `linux-t2`). It runs automatically on the first login of the live system, so Wi-Fi is usable right away as long as macOS is still installed.
 
-```sh
-git clone https://github.com/NoaHimesaka1873/apple-bcm-firmware
-cd apple-bcm-firmware
-makepkg -s
-```
-Or, grab a pre-compiled package:
+If it failed (for example because macOS was wiped), run it again as root:
 
 ```sh
-wget https://mirror.funami.tech/arch-mact2/os/x86_64/apple-bcm-firmware-14.0-1-any.pkg.tar.zst
-sudo pacman -U apple-bcm-firmware-14.0-1-any.pkg.tar.zst
+apple-bcm-firmware-fetcher
 ```
 
-If you need raw firmware files, you can grap them from [here](https://mirror.funami.tech/arch-mact2/firmware/).
+For other ways to obtain the firmware, see the [t2linux wiki](https://wiki.t2linux.org/guides/wifi-bluetooth/).
 
 # Credits
 

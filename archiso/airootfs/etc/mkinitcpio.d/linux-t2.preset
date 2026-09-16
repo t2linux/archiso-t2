@@ -1,3 +1,5 @@
+# mkinitcpio preset file for the 'linux-t2' package on archiso
+
 PRESETS=('archiso')
 
 ALL_kver='/boot/vmlinuz-linux-t2'

@@ -1,1 +1,2 @@
+# Authorize Thunderbolt devices automatically in the live environment
 ACTION=="add", SUBSYSTEM=="thunderbolt", ATTR{authorized}=="0", ATTR{authorized}="1"
